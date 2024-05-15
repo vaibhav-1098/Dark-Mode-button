@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Dark Mode-button</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* dark mode */
+        body{
+            background-color: #e5f7ff;
+        }
+        .dark{
+            background-color: #1e293b;
+            color: antiquewhite;
+        }
+        .dark{
+            table,td,tr{
+                border-color: antiquewhite;
+            }
+            p{
+                color: aliceblue;
+            }
+            .box{
+                color: black;
+                background-color: springgreen;
+            }
+        }
+    </style>
+    <style>
+        /* sliding animation */
+        .slider,.circle,body{
+            transition: 0.4s;
+        }
+        table, td, tr{
+            border: 1px solid black;
+        }
+        td{
+            padding: 0.3rem 2rem;
+        }
+        .move{
+            .circle{
+                transform: translateX(36px);
+            }
+            .slider{
+                background-color: violet;
+            }
+        }
+    </style>
+</head><body>
+<!-- START -->
+    
+<h1 class="text-center m-4 text-3xl underline">Dark Mode-button</h1>
+
+<!-- slider -->
+<div class="slider block mx-auto w-16 bg-gray-300 rounded-full p-1 cursor-pointer">
+    <div class="circle aspect-square h-5 bg-white rounded-full"></div>
+</div>
+
+<!-- section -->
+<section class="mx-5">
+
+    <h1 class="text-3xl underline my-3">
+        Heading
+    </h1>
+
+    <!-- paragraph -->
+    <p class="text-justify text-gray-700">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae et nisi soluta? Dolor, voluptate aperiam quas sit reiciendis corporis quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet odit eum et rerum repellat unde laudantium corrupti aliquam dignissimos!
+    </p>
+
+    <!-- table -->
+    <table class="mx-auto w-1/2 my-5">
+        <tr>
+          <td colspan="2" class="text-center"><b>FRUITS</b></td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>Mango</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td>Orange</td>
+        </tr>
+        <tr>
+          <td>Grapes</td>
+          <td>Purple</td>
+        </tr>
+      </table>
+
+      <!-- box -->
+      <div class="box bg-yellow-300 p-2 text-center rounded-md">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit, aspernatur iure dolores
+      </div>
+
+</section>
+
+
+<!-- END -->
+<script src="script.js"></script>
+</body></html>
